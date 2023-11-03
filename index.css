@@ -1,0 +1,365 @@
+.header {
+  display: flex;
+  padding: 1rem 19.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navber {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-link {
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #888888;
+}
+
+.header-member {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-login {
+  display: inline-flex;
+  height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 2px solid var(--Brand-01, #fca260);
+}
+
+.header-login_a {
+  color: var(--Brand-01, #fca260);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.header-signup {
+  display: inline-flex;
+  height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--Brand-01, #fca260);
+  background: var(--Brand-01, #fca260);
+}
+
+.header-signup_a {
+  color: var(--White, #fff);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.index-banner {
+  display: flex;
+  height: 35rem;
+  padding: 8rem 26.375rem;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  align-self: stretch;
+
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url(img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-section {
+  display: flex;
+  padding: 5rem 26.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  align-self: stretch;
+
+  border-radius: 0rem 12.5rem 0rem 0rem;
+}
+
+.i-section-textbox {
+  display: flex;
+  width: 29.1875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.i-section-texttitle {
+  align-self: stretch;
+  color: var(--Brand-03, #ff8551);
+
+  font-family: Noto Sans TC;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.i-section-textdesbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.i-section-textdes {
+  color: var(--Gray-02, #888);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.i-section-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.i-section-navtext {
+  color: #000;
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.i-section-navbtn {
+  display: flex;
+  height: 3.25rem;
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+
+  border-radius: 3rem;
+  border: 2px solid var(--Brand-01, #fca260);
+}
+
+.i-s-navbtn-text {
+  color: var(--Brand-01, #fca260);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.index-qa {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  align-self: stretch;
+
+  background: var(--Brand-04, #fffaef);
+}
+
+.i-qa-title {
+  color: var(--Brand-03, #ff8551);
+
+  font-family: Noto Sans TC;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.i-qa-label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.i-qa-tab {
+  display: flex;
+  padding: 0.5rem 1rem 1rem 2.5rem;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 0rem 0.5625rem;
+  flex-wrap: wrap;
+
+  color: var(--Gray-02, #888);
+  text-align: center;
+
+  font-family: Noto Sans TC;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.1rem;
+
+  cursor: pointer;
+}
+
+.i-qa-description {
+  display: flex;
+  width: 53.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.i-qa-img {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.i-qa-textbox {
+  display: flex;
+  height: 12.625rem;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 0 0;
+
+  border-radius: 2.5rem;
+  border: 2px dashed var(--Brand-03, #ff8551);
+}
+
+.i-qa-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.i-qa-text_1 {
+  color: var(--Gray-01, #1e1e1e);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.index-callup {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.i-callup-words {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  padding: 5rem 0 3.5rem 0;
+  align-items: center;
+  gap: 5rem;
+  align-self: stretch;
+}
+
+.i-callup-textbox {
+  display: flex;
+  width: 43.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.i-callup-titlebox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.i-callup-title {
+  color: var(--Brand-03, #ff8551);
+
+  font-family: Noto Sans TC;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.i-callup-desbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.i-callup-description {
+  color: var(--Gray-02, #888);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.footer {
+  display: flex;
+  height: 8rem;
+  padding: 2rem 19.5rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.footer-copyright {
+  color: var(--Gray-02, #888);
+
+  font-family: Noto Sans TC;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
