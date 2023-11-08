@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  padding: 1rem 18rem;
-  justify-content: space-between;
+  padding: 1rem 5rem;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -362,8 +362,8 @@
 .footer {
   display: flex;
   height: 8rem;
-  padding: 2rem 19.5rem;
-  justify-content: space-between;
+  padding: 2rem 5rem;
+  justify-content: space-around;
   align-items: center;
   align-self: stretch;
 }
