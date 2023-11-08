@@ -78,13 +78,11 @@
 
 .index-banner {
   display: flex;
-  height: 35rem;
-  padding: 8rem 26.375rem;
+  height: 560px;
   justify-items: center;
   align-items: center;
   gap: 3rem;
   align-self: stretch;
-
   background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.6) 0%,
@@ -92,6 +90,7 @@
     ),
     url(img/banner.png);
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
