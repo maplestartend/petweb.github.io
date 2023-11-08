@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-navber {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-link {
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #888888;
+}
+
+.header-member {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-login {
+  display: inline-flex;
+  height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 2px solid var(--Brand-01, #fca260);
+}
+
+.header-login_a {
+  color: var(--Brand-01, #fca260);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.header-signup {
+  display: inline-flex;
+  height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--Brand-01, #fca260);
+  background: var(--Brand-01, #fca260);
+}
+
+.header-signup_a {
+  color: var(--White, #fff);
+
+  font-family: Noto Sans TC;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  height: 8rem;
+  padding: 2rem 5rem;
+  justify-content: space-around;
+  align-items: center;
+  align-self: stretch;
+}
+
+.footer-copyright {
+  color: var(--Gray-02, #888);
+
+  font-family: Noto Sans TC;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
