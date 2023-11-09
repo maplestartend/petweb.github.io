@@ -10,7 +10,7 @@
       rgba(255, 255, 255, 0.6) 0%,
       rgba(255, 255, 255, 0) 50%
     ),
-    url(/img/banner.png);
+    url(../img/banner.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
