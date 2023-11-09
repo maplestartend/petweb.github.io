@@ -1,7 +1,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 25.0475613, lng: 121.5173399 },
-    zoom: 13,
+    zoom: 16,
     mapTypeControl: false,
   });
   const card = document.getElementById("pac-card");

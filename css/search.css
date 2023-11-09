@@ -31,13 +31,10 @@ body {
   text-align: center;
 }
 
-.searchBar {
-  width: 500px;
-  height: 50px;
+.searchBlock {
   top: 200px;
   left: 37%;
   position: absolute;
-  background-color: #fff;
   z-index: 1;
 }
 
