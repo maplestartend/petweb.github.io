@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans+TC:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/search.css" />
@@ -21,8 +25,8 @@
   <header class="header">
     <a href="index.html"><img src="img/Logo.svg" alt="logo" /></a>
     <div class="header-navber">
-      <a href="index.html" class="header-link">首頁</a>
       <a href="#" class="header-link">貓貓食誌</a>
+      <a href="index.html" class="header-link">首頁</a>
       <a href="#" class="header-link">常見問答</a>
     </div>
     <div class="header-member">
@@ -35,26 +39,54 @@
     </div>
   </header>
   <body>
-    <h1 class="h1">動物醫院列表</h1>
-    <div class="searchBlock">
-      <form action="">
-        <div class="searchBox">
-          <input class="searchInput" type="text" name="" placeholder="Search" />
-          <button class="searchButton" href="#">search</button>
-        </div>
-        <select>
-          <option>選擇縣市</option>
-          <option>台北市</option>
-        </select>
-        <select>
-          <option>選擇區域</option>
-          <option>中正區</option>
-        </select>
-
-        <button>我的最愛</button>
-      </form>
+    <div class="searchTitle">
+      <h1 class="h1">動物醫院列表</h1>
     </div>
-    <div class="container"></div>
+    <form action="">
+      <div class="searchBlock">
+        <input
+          class="searchBar"
+          type="text"
+          name=""
+          placeholder="搜尋附近的醫院"
+        />
+        <button type="submit" class="searchButton">
+          <img
+            src="img/magnifying-glass-solid.svg"
+            class="searchButton_icon"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- <select>
+        <option>選擇縣市</option>
+        <option>台北市</option>
+      </select>
+      <select>
+        <option>選擇區域</option>
+        <option>中正區</option>
+      </select>
+
+      <button>我的最愛</button> -->
+    </form>
+    <div class="container">
+      <div class="container-infoBox"></div>
+      <div class="container-infoBox"></div>
+      <div class="container-infoBox"></div>
+      <div class="container-infoBox"></div>
+      <div class="container-infoBox"></div>
+      <ul class="container-page">
+        <li><a href="#">«</a></li>
+        <li><a class="active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
     <div id="map"></div>
     <div id="infowindow-content">
       <span id="place-name" class="title"></span><br />

@@ -4,7 +4,7 @@ function initMap() {
     zoom: 16,
     mapTypeControl: false,
   });
-  const card = document.getElementById("pac-card");
+  const searchBlock = document.getElementById("searchBlock");
   const input = document.getElementById("pac-input");
   const biasInputElement = document.getElementById("use-location-bias");
   const strictBoundsInputElement = document.getElementById("use-strict-bounds");
@@ -14,7 +14,7 @@ function initMap() {
     types: ["establishment"],
   };
 
-  // map.controls[google.maps.ControlPosition.TOP_LEFT].push(card);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchBlock);
 
   const autocomplete = new google.maps.places.Autocomplete(input, options);
 

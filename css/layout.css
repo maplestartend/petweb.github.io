@@ -30,7 +30,7 @@
 .header-login {
   display: inline-flex;
   height: 3.25rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0 1.5rem;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -54,7 +54,7 @@
 .header-signup {
   display: inline-flex;
   height: 3.25rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0 1.5rem;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
