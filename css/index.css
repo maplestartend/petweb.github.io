@@ -204,6 +204,7 @@
 
 .index-callup {
   padding-bottom: 5rem;
+  text-align: center;
 }
 
 .i-callup-words {
@@ -263,7 +264,7 @@
 .index-nav {
   display: flex;
   width: 100%;
-  align-items: flex-start;
+  justify-content: center;
   padding-bottom: 3rem;
 }
 
