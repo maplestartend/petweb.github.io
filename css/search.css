@@ -84,6 +84,31 @@ body {
   height: 150px;
   background-color: #fff;
   border-bottom: 1px solid #afb8b9;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-infoTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container-infoScore {
+  text-align: center;
+}
+
+.container-infoScore_img {
+  display: inline-block;
+  background-size: 16px;
+  background-image: url(../img/star-10.png);
+  height: 16px;
+  width: 16px;
+  vertical-align: top;
+}
+
+.infoScore_star0 {
+  background-image: url(../img/star-0.png);
 }
 
 .container-page {
