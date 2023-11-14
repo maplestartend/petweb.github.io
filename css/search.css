@@ -1,20 +1,8 @@
-/**
-       * @license
-       * Copyright 2019 Google LLC. All Rights Reserved.
-       * SPDX-License-Identifier: Apache-2.0
-       */
-/* 
-       * Always set the map height explicitly to define the size of the div element
-       * that contains the map. 
-       */
 #map {
   width: 100%;
   height: 100%;
 }
 
-/* 
-       * Optional: Makes the sample page fill the window. 
-       */
 html,
 body {
   height: 100%;
@@ -36,8 +24,8 @@ body {
 }
 
 .searchBlock {
-  width: 500px;
-  margin: 2rem;
+  width: 30rem;
+  margin: 2rem 2rem 0 2rem;
   position: relative;
   display: flex;
   position: absolute;
@@ -45,17 +33,17 @@ body {
 }
 
 .searchBar {
-  width: 450px;
-  height: 50px;
-  padding-left: 15px;
+  width: 27rem;
+  height: 3rem;
+  padding-left: 1rem;
   font-size: 1.25rem;
   background-color: #fff;
   border-radius: 1rem 0 0 1rem;
 }
 
 .searchButton {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid #fca260;
   background: #fca260;
   text-align: center;
@@ -65,27 +53,40 @@ body {
 }
 
 .searchButton_icon {
-  height: 25px;
+  height: 1.5rem;
 }
 
-.container {
+.search-container {
   font-family: Noto Sans TC;
-  top: 20rem;
+  top: 18rem;
   left: 2rem;
   position: absolute;
   background-color: #fff;
   z-index: 1;
   display: flex;
   flex-direction: column;
+  height: 86vh;
+  overflow-y: scroll;
 }
 
 .container-infoBox {
-  width: 450px;
-  height: 150px;
+  width: 28rem;
+  height: 10rem;
   background-color: #fff;
   border-bottom: 1px solid #afb8b9;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.container-infoBox:hover {
+  background-color: #eee;
+}
+
+.infoLink {
+  width: 28rem;
+  height: 10rem;
+  position: absolute;
 }
 
 .container-infoTitle {
@@ -96,14 +97,15 @@ body {
 
 .container-infoScore {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .container-infoScore_img {
   display: inline-block;
-  background-size: 16px;
+  background-size: 1rem;
   background-image: url(../img/star-10.png);
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  width: 1rem;
   vertical-align: top;
 }
 
@@ -111,8 +113,20 @@ body {
   background-image: url(../img/star-0.png);
 }
 
+.container-infoAddress {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.container-infoTT {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
 .container-page {
-  width: 450px;
+  width: 28rem;
   display: inline-block;
   text-align: center;
   padding: 0 10px;
@@ -126,7 +140,7 @@ body {
 
 .container-page li a {
   color: #000;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
 
@@ -139,9 +153,50 @@ body {
   background-color: #ddd;
 }
 
+.infoDetail {
+  top: 18rem;
+  left: 33rem;
+  width: 28rem;
+  height: 86vh;
+  font-family: Noto Sans TC;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.infoDetail-container {
+  border-bottom: 1px solid #999;
+}
+
+.infoDetail-infoTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.infoDetail-row {
+  padding: 1rem 3.5rem;
+}
+
+.infoMessage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #999;
+}
+
+.i-message_button {
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
 #description {
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -163,9 +218,9 @@ body {
 }
 
 #locationField {
-  margin-right: 30px;
+  margin-right: 2rem;
 }
 
 #controls {
-  margin-right: 30px;
+  margin-right: 2rem;
 }

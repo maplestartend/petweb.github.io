@@ -6,8 +6,8 @@ function initMap() {
   });
   const searchBlock = document.getElementById("searchBlock");
   const input = document.getElementById("pac-input");
-  const biasInputElement = document.getElementById("use-location-bias");
-  const strictBoundsInputElement = document.getElementById("use-strict-bounds");
+  // const biasInputElement = document.getElementById("use-location-bias");
+  // const strictBoundsInputElement = document.getElementById("use-strict-bounds");
   const options = {
     fields: ["formatted_address", "geometry", "name"],
     strictBounds: false,
