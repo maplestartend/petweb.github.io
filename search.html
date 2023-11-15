@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -45,6 +45,7 @@
     <form action="">
       <div class="searchBlock">
         <input
+          id="pac-input"
           class="searchBar"
           type="text"
           name=""
@@ -87,7 +88,6 @@
         </div>
       </div>
       <div class="container-infoBox">
-        <a href="#" class="infoLink"></a>
         <h2 class="container-infoTitle">xxx醫院</h2>
         <div class="container-infoScore">
           <span class="container-infoScore_text">評分:4.0</span>
@@ -104,7 +104,6 @@
         </div>
       </div>
       <div class="container-infoBox">
-        <a href="#" class="infoLink"></a>
         <h2 class="container-infoTitle">xxx醫院</h2>
         <div class="container-infoScore">
           <span class="container-infoScore_text">評分:4.0</span>
@@ -121,7 +120,6 @@
         </div>
       </div>
       <div class="container-infoBox">
-        <a href="#" class="infoLink"></a>
         <h2 class="container-infoTitle">xxx醫院</h2>
         <div class="container-infoScore">
           <span class="container-infoScore_text">評分:4.0</span>
@@ -138,7 +136,6 @@
         </div>
       </div>
       <div class="container-infoBox">
-        <a href="#" class="infoLink"></a>
         <h2 class="container-infoTitle">xxx醫院</h2>
         <div class="container-infoScore">
           <span class="container-infoScore_text">評分:4.0</span>
@@ -155,15 +152,15 @@
         </div>
       </div>
       <ul class="container-page">
-        <li><a href="#">«</a></li>
-        <li><a class="active" href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">»</a></li>
+        <li>«</li>
+        <li class="c-page_count active">1</li>
+        <li class="c-page_count">2</li>
+        <li class="c-page_count">3</li>
+        <li class="c-page_count">4</li>
+        <li class="c-page_count">5</li>
+        <li class="c-page_count">6</li>
+        <li class="c-page_count">7</li>
+        <li>»</li>
       </ul>
     </div>
     <div class="infoDetail">
@@ -178,9 +175,22 @@
           <a href="https://www.google.com/">https://www.google.com/</a>
         </div>
       </div>
-      <div class="infoDetail-message">
-        <div class="infoMessage-container">
-          <h2 class="infoDetail-infoTitle">評論區</h2>
+      <div class="infoMessage-container">
+        <h2 class="infoDetail-infoTitle">評論區</h2>
+        <div class="container-infoScore">
+          <span class="container-infoScore_text">評分:4.0</span>
+          <div class="container-infoScore_img"></div>
+          <div class="container-infoScore_img"></div>
+          <div class="container-infoScore_img"></div>
+          <div class="container-infoScore_img"></div>
+          <div class="container-infoScore_img infoScore_star0"></div>
+        </div>
+        <button class="i-message_button" onclick="showAlert()">新增評論</button>
+      </div>
+      <div class="infoMessageBox">
+        <div class="infoMessageBox-info">
+          <div class="infoMessageBox-name">用戶名 : xxx</div>
+          <div class="infoMessageBox-time">留言時間 : 2023/03/14</div>
           <div class="container-infoScore">
             <span class="container-infoScore_text">評分:4.0</span>
             <div class="container-infoScore_img"></div>
@@ -189,8 +199,47 @@
             <div class="container-infoScore_img"></div>
             <div class="container-infoScore_img infoScore_star0"></div>
           </div>
-          <button class="i-message_button">新增/修改評論</button>
         </div>
+        <p class="infoMessageBox-content">
+          留言內容 :
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+      </div>
+      <div class="infoMessageBox">
+        <div class="infoMessageBox-info">
+          <div class="infoMessageBox-name">用戶名 : xxx</div>
+          <div class="infoMessageBox-time">留言時間 : 2023/03/14</div>
+          <div class="container-infoScore">
+            <span class="container-infoScore_text">評分:4.0</span>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img infoScore_star0"></div>
+          </div>
+        </div>
+        <p class="infoMessageBox-content">
+          留言內容 :
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+      </div>
+      <div class="infoMessageBox">
+        <div class="infoMessageBox-info">
+          <div class="infoMessageBox-name">用戶名 : xxx</div>
+          <div class="infoMessageBox-time">留言時間 : 2023/03/14</div>
+          <div class="container-infoScore">
+            <span class="container-infoScore_text">評分:4.0</span>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img"></div>
+            <div class="container-infoScore_img infoScore_star0"></div>
+          </div>
+        </div>
+        <p class="infoMessageBox-content">
+          留言內容 :
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
       </div>
     </div>
     <div id="map"></div>
@@ -206,6 +255,7 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
     <script src="js/search.js"></script>
   </body>
   <footer class="footer">

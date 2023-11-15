@@ -9,6 +9,7 @@ function initMap() {
   // const biasInputElement = document.getElementById("use-location-bias");
   // const strictBoundsInputElement = document.getElementById("use-strict-bounds");
   const options = {
+    componentRestrictions: { country: "tw" },
     fields: ["formatted_address", "geometry", "name"],
     strictBounds: false,
     types: ["establishment"],
@@ -64,3 +65,47 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+async function showAlert() {
+  const { value: text } = await Swal.fire({
+    input: "textarea",
+    title: "請留下您的寶貴評論",
+    inputPlaceholder: "在此輸入~",
+    inputAttributes: {
+      "aria-label": "Type your message here",
+    },
+    showCancelButton: true,
+    inputValidator: (value) => {
+      if (!value) {
+        return "您尚未輸入內容哦~";
+      }
+    },
+  });
+  if (text) {
+    Swal.fire({
+      icon: "success",
+      title: "留言已儲存",
+      text: "感謝您的評論!",
+    });
+  }
+}
+
+const infoBox = document.querySelectorAll(".container-infoBox");
+const infoDetail = document.querySelector(".infoDetail");
+
+infoBox.forEach((element) => {
+  element.addEventListener("click", function () {
+    infoDetail.classList.toggle("block-active");
+  });
+});
+
+const pageCount = document.querySelectorAll(".c-page_count");
+
+pageCount.forEach((element) => {
+  element.addEventListener("click", function () {
+    pageCount.forEach((element) => {
+      element.classList.remove("active");
+    });
+    element.classList.toggle("active");
+  });
+});
