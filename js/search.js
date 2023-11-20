@@ -66,7 +66,9 @@ function initMap() {
 
 window.initMap = initMap;
 
-async function showAlert() {
+const messageButton = document.querySelector(".i-message_button");
+
+messageButton.addEventListener("click", async function showAlert() {
   const { value: text } = await Swal.fire({
     input: "textarea",
     title: "請留下您的寶貴評論",
@@ -88,7 +90,7 @@ async function showAlert() {
       text: "感謝您的評論!",
     });
   }
-}
+});
 
 const infoBox = document.querySelectorAll(".container-infoBox");
 const infoDetail = document.querySelector(".infoDetail");

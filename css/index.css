@@ -1,4 +1,4 @@
-.index-banner {
+.swiper-slide img {
   display: flex;
   height: 560px;
   justify-items: center;
@@ -6,11 +6,10 @@
   gap: 3rem;
   align-self: stretch;
   background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.6) 0%,
-      rgba(255, 255, 255, 0) 50%
-    ),
-    url(../img/banner.png);
+    90deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -140,6 +139,7 @@
   align-content: flex-end;
   gap: 0rem 0.5625rem;
   flex-wrap: wrap;
+  position: relative;
 
   color: var(--Gray-02, #888);
   text-align: center;
@@ -153,53 +153,15 @@
   cursor: pointer;
 }
 
-.i-qa-description {
-  display: flex;
-  width: 53.5rem;
-  justify-content: center;
-  align-items: center;
+.i-qa-tab img {
+  position: absolute;
+  bottom: -2px;
+  left: -15px;
 }
 
-.i-qa-img {
-  display: flex;
-  padding: 2.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  align-self: stretch;
-}
-
-.i-qa-textbox {
-  display: flex;
-  height: 12.625rem;
-  padding: 2.5rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1 0 0;
-
-  border-radius: 2.5rem;
-  border: 2px dashed var(--Brand-03, #ff8551);
-}
-
-.i-qa-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
-  align-self: stretch;
-}
-
-.i-qa-text_1 {
-  color: var(--Gray-01, #1e1e1e);
-
-  font-family: Noto Sans TC;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.875rem;
+.i-qa-tab_active {
+  color: #1e1e1e;
+  border-bottom: 2px solid #fca260;
 }
 
 .index-callup {
