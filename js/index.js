@@ -21,3 +21,18 @@ qaTabAll.forEach((element) => {
     qaImg.setAttribute("src", `img/${element.id}.png`);
   });
 });
+
+const bannerSwiper = new Swiper("#bannerSwiper", {
+  direction: "horizontal",
+  loop: true,
+  autoplay: true,
+  preloadImages: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

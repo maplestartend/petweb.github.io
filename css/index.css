@@ -1,4 +1,4 @@
-.swiper-slide img {
+.index-banner {
   display: flex;
   height: 560px;
   justify-items: center;
@@ -6,10 +6,11 @@
   gap: 3rem;
   align-self: stretch;
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0) 50%
-  );
+      90deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url(../img/banner.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -165,7 +166,7 @@
 }
 
 .index-callup {
-  padding-bottom: 5rem;
+  padding: 5rem 0;
   text-align: center;
 }
 

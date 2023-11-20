@@ -19,6 +19,19 @@
   line-height: 1.5rem;
   text-decoration: none;
   color: #888888;
+  position: relative;
+}
+
+.header-link:hover,
+.header-link:active {
+  color: #1e1e1e;
+}
+
+.header-link img {
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  z-index: -1;
 }
 
 .header-member {

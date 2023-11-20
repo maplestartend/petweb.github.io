@@ -11,18 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans+TC:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <header class="header">
     <a href="index.html"><img src="img/Logo.svg" alt="logo" /></a>
-    <div class="header-navber">
-      <a href="#" class="header-link">貓貓食誌</a>
-      <a href="search.html" class="header-link">動物醫院列表</a>
-      <a href="#" class="header-link">常見問答</a>
-    </div>
+    <ul class="header-navber">
+      <li><a href="#" class="header-link">貓貓食誌</a></li>
+      <li><a href="search.html" class="header-link">動物醫院列表</a></li>
+      <li><a href="#" class="header-link">常見問答</a></li>
+    </ul>
     <div class="header-member">
       <div class="header-login">
         <a href="#" class="header-login_a">登入</a>
@@ -33,7 +36,31 @@
     </div>
   </header>
   <body>
-    <div class="index-banner"></div>
+    <!-- <div class="index-banner"></div> -->
+
+    <div class="swiper" id="bannerSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/banner.png" alt="banner圖片" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner.png" alt="banner圖片" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner.png" alt="banner圖片" />
+        </div>
+        ...
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev">
+        <!-- <img src="img/pre-button.png" alt="上一頁按鈕" /> -->
+      </div>
+      <div class="swiper-button-next">
+        <!-- <img src="img/nex-button.png" alt="下一頁按鈕" /> -->
+      </div>
+    </div>
     <div class="index-section">
       <img src="img/cat.svg" alt="貓咪吃東西" />
       <div class="i-section-textbox">
@@ -60,19 +87,6 @@
         <li><a class="i-qa-tab" id="protein">蛋白質</a></li>
         <li><a class="i-qa-tab" id="water">水分</a></li>
       </ul>
-      <!-- <div class="i-qa-description">
-        <div class="i-qa-img">
-          <img src="img/qacat.svg" alt="圓圓貓" />
-        </div>
-        <div class="i-qa-textbox">
-          <div class="i-qa-text">
-            <div class="i-qa-text_1">
-              體重直接影響貓貓們需要補充的營養、熱量
-            </div>
-            <div class="i-qa-text_1">更關乎著心臟、關節、呼吸等健康</div>
-          </div>
-        </div>
-      </div> -->
       <img src="img/weight.png" id="qaImg" alt="介紹" />
     </div>
     <div class="index-callup">
@@ -86,6 +100,8 @@
         <img src="img/Group3.png" class="i-nav-img" alt="點擊查詢動物醫院" />
       </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/layout.js"></script>
     <script src="js/index.js"></script>
   </body>
   <footer class="footer">
