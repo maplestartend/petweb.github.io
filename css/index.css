@@ -222,3 +222,52 @@
     padding-bottom: 3rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .i-section-texttitle {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .i-section-textdes {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .i-section-navtext {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .i-section-navbtn {
+    height: 2.75rem;
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .i-s-navbtn-text {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .index-qa {
+    padding: 2rem;
+  }
+
+  .i-qa-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .i-qa-tab {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .index-callup {
+    padding: 2rem 0;
+  }
+
+  .index-nav {
+    padding-bottom: 2rem;
+  }
+}
