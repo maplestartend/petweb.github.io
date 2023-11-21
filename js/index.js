@@ -25,14 +25,18 @@ qaTabAll.forEach((element) => {
 const bannerSwiper = new Swiper("#bannerSwiper", {
   direction: "horizontal",
   loop: true,
-  autoplay: true,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+  },
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
   preloadImages: false,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });

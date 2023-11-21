@@ -98,6 +98,10 @@
   align-self: stretch;
 }
 
+.footer-img {
+  width: 15vw;
+}
+
 .footer-copyright {
   color: var(--Gray-02, #888);
 
