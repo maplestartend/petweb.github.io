@@ -36,7 +36,4 @@ const bannerSwiper = new Swiper("#bannerSwiper", {
     crossFade: true,
   },
   preloadImages: false,
-  pagination: {
-    el: ".swiper-pagination",
-  },
 });
