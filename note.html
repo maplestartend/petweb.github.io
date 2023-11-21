@@ -11,34 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="note.css" />
   </head>
   <body>
-    <header>
-      <div class="header-wrap">
-        <div class="logo">
-          <a href="index.html"><img src="img/Logo.svg" alt="" /></a>
+    <header class="header">
+      <a href="index.html"
+        ><img src="img/Logo.svg" alt="logo" class="header-logo"
+      /></a>
+      <ul class="header-navber">
+        <li><a href="note.html" class="header-link">貓貓食誌</a></li>
+        <li><a href="search.html" class="header-link">動物醫院列表</a></li>
+        <li><a href="#" class="header-link">常見問答</a></li>
+      </ul>
+      <div class="header-member">
+        <div class="header-login">
+          <a href="login.html" class="header-login_a">登入</a>
         </div>
-        <div class="nav">
-          <ul class="nav-list">
-            <li><a href="">貓貓食誌</a></li>
-            <li><a href="">動物醫院列表</a></li>
-            <li><a href="">常見問答</a></li>
-          </ul>
-        </div>
-        <div class="member">
-          <div class="log-in"><a href="">登入</a></div>
-          <div class="sign-up"><a href="">註冊</a></div>
+        <div class="header-signup">
+          <a href="login.html" class="header-signup_a">註冊</a>
         </div>
       </div>
     </header>
-
     <div class="banner">
       <div class="banner-wrap">
         <h1>貓貓食誌</h1>
       </div>
     </div>
-
     <main>
       <section>
         <div class="cat">
@@ -414,5 +413,13 @@
         </div>
       </section>
     </main>
+    <script src="js/layout.js"></script>
   </body>
+  <footer class="footer">
+    <a href="index.html"
+      ><img src="img/Logo.svg" alt="logo" class="footer-logo"
+    /></a>
+    <img src="img/Group.svg" alt="貓貓圖片" class="footer-img" />
+    <div class="footer-copyright">© 2023 Meow Eat</div>
+  </footer>
 </html>
