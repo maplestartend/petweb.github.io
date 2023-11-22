@@ -258,6 +258,10 @@
     line-height: 1.75rem;
   }
 
+  .i-qa-label {
+    gap: 0;
+  }
+
   .i-qa-tab {
     font-size: 1rem;
     line-height: 1.75rem;
