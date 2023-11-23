@@ -40,30 +40,68 @@
     </div>
     <main>
       <section>
-        <div class="cat">
-          <div class="cat-head">
-            <div class="cat-info">
-              <div class="cat-name">貓貓姓名</div>
-              <div class="cat-weight">體重：5.2kg</div>
-              <div class="cat-age">年齡：3歲</div>
+        <div class="cat-container">
+          <div class="cat-list">
+            <div class="cat-head">
+              <div class="cat-info">
+                <div class="cat-name">貓貓姓名</div>
+                <div class="cat-weight">體重：5.2kg</div>
+                <div class="cat-age">年齡：3歲</div>
+              </div>
+              <div class="cat-needed">
+                貓貓今天還需要攝取<span class="green">200大卡</span>、<span
+                  class="blue"
+                  >150ml水分</span
+                >
+              </div>
+              <div class="last-eating-time">
+                上次吃飯：早上7點　 ＯＯ品牌飼料、130大卡
+              </div>
             </div>
-            <div class="cat-needed">
-              貓貓還需要攝取<span class="green">200大卡</span>、<span
-                class="blue"
-                >150ml水分</span
-              >
+          </div>
+          <div class="cat-list">
+            <div class="cat-head">
+              <div class="cat-info">
+                <div class="cat-name">貓貓姓名</div>
+                <div class="cat-weight">體重：5.2kg</div>
+                <div class="cat-age">年齡：3歲</div>
+              </div>
+              <div class="cat-needed">
+                貓貓今天還需要攝取<span class="green">200大卡</span>、<span
+                  class="blue"
+                  >150ml水分</span
+                >
+              </div>
+              <div class="last-eating-time">
+                上次吃飯：早上7點　 ＯＯ品牌飼料、130大卡
+              </div>
             </div>
-            <div class="last-eating-time">
-              上次吃飯：早上7點　 ＯＯ品牌飼料、130大卡
+          </div>
+          <div class="cat-list">
+            <div class="cat-head">
+              <div class="cat-info">
+                <div class="cat-name">貓貓姓名</div>
+                <div class="cat-weight">體重：5.2kg</div>
+                <div class="cat-age">年齡：3歲</div>
+              </div>
+              <div class="cat-needed">
+                貓貓今天還需要攝取<span class="green">200大卡</span>、<span
+                  class="blue"
+                  >150ml水分</span
+                >
+              </div>
+              <div class="last-eating-time">
+                上次吃飯：早上7點　 ＯＯ品牌飼料、130大卡
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section id="cat">
         <div class="cat">
-          <a href=""
-            ><img src="image/pencil-square.svg" class="edit-btn" alt=""
+          <a href="" class="edit-cat-btn"
+            ><img src="img/pencil-square.svg" class="edit-btn" alt=""
           /></a>
           <div class="cat-head">
             <div class="cat-info">
@@ -116,16 +154,14 @@
             </div>
           </div>
           <div class="switch">
-            <a href="">餵食紀錄</a>
+            <a href="" class="feed-history-btn">餵食紀錄</a>
             <a href="">切換自煮頁</a>
           </div>
         </div>
 
-        <div class="feed-history">
+        <!-- <div class="feed-history">
           <h2>餵食紀錄</h2>
-          <a href=""
-            ><img src="image/x-lg.svg" alt="" class="close-button"
-          /></a>
+          <a href="" class="close-button"><img src="img/x-lg.svg" alt=""/></a>
           <ul>
             <li>
               <div>ＯＯ品牌飼料</div>
@@ -160,7 +196,7 @@
               <div>10/20 早上八點</div>
             </li>
           </ul>
-        </div>
+        </div> -->
       </section>
 
       <section>
@@ -287,6 +323,7 @@
         </div>
         <div class="feed-history">
           <h2>疫苗紀錄</h2>
+          <a href=""><img src="img/x-lg.svg" alt="" class="close-button" /></a>
           <ul>
             <li>
               <div>ＯＯ疾病疫苗</div>
@@ -414,6 +451,7 @@
       </section>
     </main>
     <script src="js/layout.js"></script>
+    <script src="js/note.js"></script>
   </body>
   <footer class="footer">
     <a href="index.html"

@@ -25,10 +25,6 @@ html {
   flex-shrink: 0;
 }
 
-/* .nav {
-  width: 28.9%;
-} */
-
 .nav-list {
   display: flex;
   gap: 48px;
@@ -114,14 +110,15 @@ main section {
   margin-bottom: 300px;
 }
 
-.edit-btn {
+.edit-cat-btn {
   width: 30px;
   position: absolute;
   right: 20px;
   top: 20px;
 }
 
-.cat {
+.cat,
+.cat-list {
   position: relative;
   width: 800px;
   /* height: 500px; */
@@ -132,6 +129,14 @@ main section {
   letter-spacing: 0.12em;
   border-radius: 10px;
   border-bottom: 10px solid orange;
+}
+
+.cat-list  {
+  border-bottom: 3px solid #888888;
+  /* border-radius: 20px; */
+}
+.cat-list .last-eating-time {
+  margin-bottom: 0;
 }
 
 .cat-head {
@@ -329,7 +334,7 @@ select,
 
 .vaccine-time-area {
   position: relative;
-  width: 50%;
+  width: 46%;
   margin: 0 auto;
 }
 
