@@ -60,7 +60,7 @@ qaTabAll.forEach((element) => {
     });
     element.classList.add("i-qa-tab_active");
     element.appendChild(iconImg);
-    window.innerWidth < 500
+    window.innerWidth < 501
       ? qaImg.setAttribute("src", `img/${element.id}-sm.png`)
       : qaImg.setAttribute("src", `img/${element.id}.png`);
   });
