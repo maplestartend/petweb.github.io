@@ -103,8 +103,6 @@ main section img {
   float: left;
 }
 
-
-
 main section {
   display: flex;
   align-items: center;
@@ -136,7 +134,7 @@ main section {
   letter-spacing: 0.12em;
   border-radius: 10px;
   border-bottom: 10px solid orange;
-  transition: all .5s;
+  transition: all 0.5s;
   transform-origin: top;
 }
 
@@ -160,7 +158,7 @@ main section {
   /* opacity: 0; */
   /* transform: scale(0); */
   transform-origin: top;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 .cat-list .last-eating-time {
@@ -443,4 +441,10 @@ select,
   font-size: 16px;
   border-radius: 7px;
   border: 2px solid #888888;
+}
+
+.test {
+  display: flex;
+  margin-bottom: 30px;
+  width: 1200px;
 }
