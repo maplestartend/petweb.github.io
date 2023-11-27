@@ -1,11 +1,11 @@
 const catList = document.querySelectorAll(".cat-list");
 const editCatBtn = document.querySelectorAll(".feed-history-btn");
 const cat = document.querySelector(".cat");
-const catContainer = document.querySelector('.cat-container');
-const id = document.getElementById('id1');
-const firstCat = document.querySelector('#firstCat')
-const feedHistory = document.querySelector('.feed-history')
-const catHistory = document.createElement("div");
+const catContainer = document.querySelector(".cat-container");
+const id = document.getElementById("id1");
+const firstCat = document.querySelector("#firstCat");
+const feedHistory = document.querySelector(".feed-history");
+// const catHistory = document.createElement("div");
 console.log(feedHistory);
 
 console.log(cat);
@@ -28,20 +28,23 @@ console.log(catList);
 
 catList.forEach((item) => {
   item.addEventListener("click", () => {
-    
+    if (item.classList == "cat-list") {
       item.style.height = "460px";
       item.innerHTML = cat.innerHTML;
-      item.setAttribute('class', 'cat');
+      item.setAttribute("class", "cat");
+    }
   });
+  console.log(editCatBtn);
 });
 
+let catHistory;
 editCatBtn.forEach((item) => {
   item.addEventListener("click", (event) => {
     console.log(item);
     event.preventDefault();
     if (!catHistory) {
       catHistory = document.createElement("div");
-      catHistory.className = "feed-history";  
+      catHistory.className = "feed-history";
       catHistory.innerHTML = `<h2>餵食紀錄</h2>
       <a href="" class="close-button"><img src="img/x-lg.svg" alt=""/></a>
       <ul>
@@ -79,19 +82,17 @@ editCatBtn.forEach((item) => {
         </li>
       </ul>`;
       console.log(catHistory);
-    } else {
     }
-    
-        console.log(item.parentElement.parentElement);
-        item.parentElement.parentElement.parentElement.append(catHistory);
-        
-  const closeButton = document.querySelector(".close-button");
-  console.log(closeButton);
-    closeButton.addEventListener('click', (event) => {
+
+    console.log(item.parentElement.parentElement);
+    item.parentElement.parentElement.parentElement.append(catHistory);
+
+    const closeButton = document.querySelector(".close-button");
+    console.log(closeButton);
+    closeButton.addEventListener("click", (event) => {
       event.preventDefault();
       console.log(closeButton.parentElement);
       closeButton.parentElement.remove();
-    })
+    });
   });
 });
-
