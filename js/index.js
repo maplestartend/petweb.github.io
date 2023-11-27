@@ -26,14 +26,27 @@ window.addEventListener("resize", (e) => {
 //reset while resize
 
 function resizeBanner() {
-  if (window.innerWidth < 500) {
+  const imgID = document.querySelector(".i-qa-tab_active").id;
+  const callupImg = document.querySelector(".i-callup_img");
+  const navImg1 = document.getElementById("navImg1");
+  const navImg2 = document.getElementById("navImg2");
+
+  if (window.innerWidth < 501) {
     banner1.setAttribute("src", "img/banner1-sm.png");
     banner2.setAttribute("src", "img/banner2-sm.png");
     banner3.setAttribute("src", "img/banner3-sm.png");
+    qaImg.setAttribute("src", `img/${imgID}-sm.png`);
+    callupImg.setAttribute("src", "img/callup-sm.png");
+    navImg1.setAttribute("src", "img/Group2-sm.png");
+    navImg2.setAttribute("src", "img/Group3-sm.png");
   } else {
     banner1.setAttribute("src", "img/banner1.png");
     banner2.setAttribute("src", "img/banner2.png");
     banner3.setAttribute("src", "img/banner3.png");
+    qaImg.setAttribute("src", `img/${imgID}.png`);
+    callupImg.setAttribute("src", "img/callup.png");
+    navImg1.setAttribute("src", "img/Group2.png");
+    navImg2.setAttribute("src", "img/Group3.png");
   }
 }
 
@@ -47,7 +60,9 @@ qaTabAll.forEach((element) => {
     });
     element.classList.add("i-qa-tab_active");
     element.appendChild(iconImg);
-    qaImg.setAttribute("src", `img/${element.id}.png`);
+    window.innerWidth < 500
+      ? qaImg.setAttribute("src", `img/${element.id}-sm.png`)
+      : qaImg.setAttribute("src", `img/${element.id}.png`);
   });
 });
 

@@ -124,7 +124,6 @@
 
 .footer {
   display: flex;
-  height: 8rem;
   padding: 2rem 5rem;
   justify-content: space-around;
   align-items: center;
@@ -132,7 +131,7 @@
 }
 
 .footer-img {
-  width: 12vw;
+  width: 15vw;
 }
 
 .footer-copyright {
@@ -224,5 +223,26 @@
   .header-hamburger {
     display: block;
     width: 50px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .footer {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .footer a {
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 70%;
+      padding-bottom: 1rem;
+    }
+
+    .footer-img {
+      width: 30vw;
+      padding-bottom: 1rem;
+    }
   }
 }
