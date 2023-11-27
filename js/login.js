@@ -9,6 +9,7 @@ let title = document.querySelector("#title");
 window.onload = function () {
   const data = location.href;
   const url = new URL(data);
+  console.log(url.searchParams.get("index"));
   url.searchParams.get("index") == 1 ? signinPage() : signupPage();
 };
 
