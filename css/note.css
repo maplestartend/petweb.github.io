@@ -109,10 +109,10 @@ main section {
   justify-content: center;
   /* height: 600px; */
   gap: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 60px;
 }
 
-.edit-cat-btn {
+.detail-page-btn {
   width: 30px;
   position: absolute;
   right: 20px;
@@ -139,7 +139,7 @@ main section {
 }
 
 .cat {
-  height: 0;
+  /* height: 0; */
 }
 
 .cat-list {
@@ -446,5 +446,6 @@ select,
 .test {
   display: flex;
   margin-bottom: 30px;
-  width: 1200px;
+  gap: 30px;
+  /* width: 1200px; */
 }
